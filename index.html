@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Story of the Caregiver</title>
+
+  <meta name="description" content="An anonymous space to reflect and share your caregiving experience." />
+  <meta name="author" content="The Research Team" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Story of the Caregiver" />
+  <meta property="og:description" content="An anonymous space to reflect and share your caregiving experience." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://yourdomain.com/opengraph.jpg" /> <!-- Optional -->
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://yourdomain.com/opengraph.jpg" /> <!-- Optional -->
+
+  <!-- Reddit Pixel -->
+  <script>
+    !function (w, d) {
+      var r = w.rdt = w.rdt || [];
+      r.methods = ["track", "disable", "enable", "identify", "convert", "alias"];
+      r.factory = function (t) {
+        return function () {
+          var e = Array.prototype.slice.call(arguments);
+          e.unshift(t), r.push(e);
+          return r;
+        };
+      };
+      r.methods.forEach(function (t) {
+        r[t] = r.factory(t);
+      });
+      r.load = function (t) {
+        var e = document.createElement("script");
+        e.src = "https://www.redditstatic.com/ads/pixel.js";
+        e.async = true;
+        var n = document.getElementsByTagName("script")[0];
+        n.parentNode.insertBefore(e, n);
+        r.init = t;
+      };
+      r.load("a2_hearjwqykdo3");
+      r.track("PageVisit");
+    }(window, document);
+  </script>
+
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
