@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Story of the Caregiver</title>
 
   <meta name="description" content="An anonymous space to reflect and share your caregiving experience." />
@@ -14,14 +13,15 @@
   <meta property="og:title" content="Story of the Caregiver" />
   <meta property="og:description" content="An anonymous space to reflect and share your caregiving experience." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://yourdomain.com/opengraph.jpg" /> <!-- Optional -->
+  <!-- Optional: replace with real image or remove -->
+  <meta property="og:image" content="https://building-community-through-stories.netlify.app/og.jpg" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="https://yourdomain.com/opengraph.jpg" /> <!-- Optional -->
+  <meta name="twitter:image" content="https://building-community-through-stories.netlify.app/og.jpg" />
 
   <!-- Reddit Pixel -->
-  <script>
+  <script defer>
     !function (w, d) {
       var r = w.rdt = w.rdt || [];
       r.methods = ["track", "disable", "enable", "identify", "convert", "alias"];
@@ -43,11 +43,12 @@
         n.parentNode.insertBefore(e, n);
         r.init = t;
       };
+
+      // ✅ Call AFTER defining .load
       r.load("a2_hearjwqykdo3");
       r.track("PageVisit");
     }(window, document);
   </script>
-
 </head>
 
 <body>
