@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Survey from "./pages/Survey";
 import NotFound from "./pages/NotFound";
+import RedditPixelWrapper from "./hooks/RedditPixelWrapper"; // ✅ Use wrapper
 
 const queryClient = new QueryClient();
 
@@ -15,10 +16,10 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <RedditPixelWrapper /> {/* ✅ Hook is now safely inside Router */}
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/survey" element={<Survey />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
